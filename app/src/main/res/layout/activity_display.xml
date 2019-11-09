@@ -1,0 +1,38 @@
+<android.support.v4.widget.DrawerLayout
+	android:id="@+id/drawerLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:minHeight="?attr/actionBarSize"
+			app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</LinearLayout>
+
+	<android.support.design.widget.NavigationView
+		android:id="@+id/navigationView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		app:headerLayout="@layout/header"
+		app:itemIconTint="#8C000000"
+		app:itemTextColor="#E6000000"
+		app:menu="@menu/menu_items_only"/>
+
+</android.support.v4.widget.DrawerLayout>
